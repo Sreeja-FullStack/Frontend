@@ -10,7 +10,7 @@ const humidityIcon = document.querySelector('#humidityimg');
 const windIcon = document.querySelector('#windimg');
 const weatherIcon = document.querySelector(".weather-icon")
 // OpenWeather API key and URL
-const apiKey = 'f51eb3cfc888d137d1dbea099d7dc8b7'
+const apiKey = 'f51eb3cfc888d137d1dbea099d7dc678'
  // Replace with your OpenWeather API key
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
