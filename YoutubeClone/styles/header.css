@@ -1,0 +1,145 @@
+
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white; 
+    border-bottom-width: 1px ;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);   
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;    
+}
+
+.logo{
+    height: 20px;
+}
+.middle-section{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 500px;
+    margin-left: 70px;
+    margin-right: 35px;
+    cursor: pointer;
+}
+.search-bar{
+    flex: 1;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 20px 0 0 20px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+.search-bar::placeholder{
+    font-family: Roboto;
+    font-size: 16px;
+    
+}
+.search-btn{
+    height: 44px;
+    width: 66px; 
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192); 
+    margin-left: -1px;
+    /* margin-right: 10px; */
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    position: relative;
+}
+.tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.search-btn:hover .tooltip{
+    opacity: 1;
+}
+.search-icon{
+    height: 25px;
+    margin-top: 4px;
+}
+.voice-btn{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+.voice-icon{
+    height: 24px;
+    margin-top: 4px;    
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+    
+}
+
+.upload-icon{
+    height: 24px;
+}
+
+
+.apps-icon{
+    height: 24px;
+}
+
+.notify-icon{
+    height: 24px;
+}
+.notify-icon-container{
+    position: relative;
+}
+.notify-count{
+    font-family: Roboto;
+    font-size: 11px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(204, 9, 9);
+    border-radius: 50%;
+    padding: 2px 5px 2px 5px; 
+    color: white; 
+    text-align: center; 
+}
+
+.user-icon{
+    height: 32px;
+    border-radius: 50px;
+}

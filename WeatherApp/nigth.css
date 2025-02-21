@@ -1,0 +1,115 @@
+body{
+    background-image: url(img/nightbg.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 700px;
+    width: 450px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    backdrop-filter: blur(40px); 
+    /* border: 1px solid; */
+    box-shadow: 0px 0px 10px 2px rgb(70, 70, 70);
+    /* opacity: 0.3; */
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    
+}
+
+.search{
+    flex: 1;
+    margin-top: 25px;
+    width: 300px;
+    height: 45px;
+    text-align: left;
+    padding-left: 15px;
+    /* padding-bottom: 5px; */
+    /* border: 1px solid rgb(89, 89, 89); */
+    border-radius: 50px 0px 0px 50px;
+    left: 52.5px;
+    /* position: relative; */
+    /* margin-left: -20px; */
+    transition: all 5s ease;
+    border: none;
+    position: absolute;
+}
+
+.search:hover{
+    background-color: rgb(195, 192, 192);
+}
+
+h1{
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.search-icon{
+    position: absolute;
+    top: 30px;
+    right: 52.5px;
+    border: 1px solid rgb(89, 89, 89);
+    padding: 5px;
+    width: 35px;
+    margin-left: -4;
+    /* border-width: 1px; */
+    border-radius: 0px 25px 25px 0px;
+    background-color: white; 
+    border: none;   
+}
+
+.search-icon:hover{
+    background-color: rgb(203, 200, 200);
+}
+.search-icon:active{
+    background-color: rgb(127, 126, 126);
+}
+
+.temp{
+    /* position: absolute; */
+    /* top: 250px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.forecast {
+    position: absolute;
+    top: 480px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+}
+
+.forecast #wind{
+    top: 450px;
+    /* right: 250px; */
+    display: flex;
+    /* flex-direction: column; */
+    margin-right: 10px;
+}
+
+.forecast #humidity{
+    top: 480px;
+    left: 10px;
+}
+
+.forecast #humidityimg{
+    height: 50px;
+    width: 45px;
+
+}

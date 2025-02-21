@@ -1,0 +1,150 @@
+.body{
+    min-height: 100vh;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: color-change 5s infinite
+}
+@keyframes color-change {
+    0% {
+      color: #ff7e5f; /* Start with a color */
+    }
+    25% {
+      color: #feb47b; /* Transition to another color */
+    }
+    50% {
+      color: #6a11cb; /* Another color */
+    }
+    75% {
+      color: #2575fc; /* Yet another color */
+    }
+    100% {
+      color: #ff7e5f; /* Back to the starting color */
+    }
+  }
+
+.container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 400px;   
+   /* min-width: 500px; */
+   /* width: 50%; */
+   border: 2px solid black;
+   margin: 150px;
+   /* margin-left: 450px;
+   margin-right: 450px; */
+   position: relative;
+   background: linear-gradient(to bottom, #191447 0%, #4e1933 100%)
+}
+
+
+table{
+    width: 100%;
+}
+
+.screen{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    padding: 6px;
+    height: 40px;
+    width: 76%;    
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: medium;
+}
+.clear{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    padding: 2px;
+    height: 65px;
+    width: 65px;
+    font-size: large;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: rgb(185, 243, 196);
+    border: 1px solid black;
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color]; */
+    box-shadow: 0px 0px 8px 1px rgb(212, 189, 189);
+    cursor: pointer;
+    
+}
+
+
+/* Hover effect to make the button glow */
+.clear:hover,
+.number:hover,
+.equal:hover,
+.decimal:hover,
+.operator:hover {
+    background-color: #cccaca; /* Lighter background when hovered */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+
+.number{
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* margin-bottom: px; */
+    padding: 2px;
+    font-size: large;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 0px 0px 8px 1px rgb(212, 189, 189);
+}
+.operator{
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 2px;
+    font-size: large;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 0px 0px 8px 1px rgb(212, 189, 189);
+    background-color: orange;
+}
+.equal{
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 2px;
+    font-size: large;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 0px 0px 8px 1px rgb(212, 189, 189);
+}
+.decimal{
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 2px;
+    font-size: large;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 0px 0px 8px 1px rgb(212, 189, 189);
+}

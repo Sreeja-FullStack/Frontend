@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(120deg, skyblue,salmon, skyblue);
+    padding: 10px;
+    }
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    height: 100%;
+    background-color: white;
+    padding: 40px 30px 70px;
+    margin: 100px auto 50px;
+    border: none;
+    border-radius: 30px;
+}
+
+.todo-app h2{
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+    height: 30px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(194, 191, 191);
+    padding-left:15px;
+    /* border: none; */
+    border-radius: 25px;
+    margin-bottom: 20px;
+    
+}
+input{
+    flex: 1;
+    background-color: transparent;
+    padding: 15px;
+    /* border: 2px; */
+    outline: none;
+    color: black;
+    font-size: 14px;
+}
+button{
+    /* width: 30%; */
+    padding: 16px 30px;
+    background-color: orangered;
+    border-radius: 30px;
+    border: 3px; 
+    color: white;
+    font-size: 18px;
+}
+ul li{
+    list-style: none;
+    padding: 12px 8px 8px 40px;
+    margin: 30px;
+    font-size: 18px;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    background-image: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    width: 28px;
+    height: 28px;
+    left: 5px;
+    border-radius: 50%;    
+}
+
+ul li.checked{
+    color: rgb(144, 142, 142);
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(img/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    top: 2px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    /* padding-right: 0%; */
+    
+}
+
+ul li span:hover{
+    background-color: grey;
+}
+

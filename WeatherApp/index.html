@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="nigth.css"> -->
+</head>
+<body>
+    <div class="container">
+        <div>
+        <input type="Search" class="search" placeholder="Search City"
+        spellcheck="false">
+        <img src="img/search-btn.png" class="search-icon">
+        </div>
+        <div id="default-Loc">
+            <!-- Default location -->
+        <h1>My Location</h1>
+        </div>
+        <div class="temp">
+            <img src="" class="weather-icon">
+            <h2></h2>
+            <h3></h3>
+            <div id="local-time">
+                <h3>Local Time: <span id="time-display">Loading...</span></h3>
+            </div>
+        </div>
+        <div class="forecast">
+            
+            <img id="humidityimg" src="img/humidity.png">
+            <p id="hum"></p>
+            <h4 id="humidity">Humidity</h4>
+            <img id="windimg" src="img/wind.png">
+            <p id="win"></p>
+            <h4 id="wind">Wind Speed</h4>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
