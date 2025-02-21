@@ -1,5 +1,5 @@
-const apiKey = 'f51eb3cfc888d137d1dbea099d7dc8b7'
-// 'https://api.openweathermap.org/data/2.5/weather?q={Lisle}&appid={}'; // Replace with your OpenWeather API key
+const apiKey = 'f51eb3cfc888d137d1dbea099d7dc679'
+// Replace with your OpenWeather API key
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
 const searchBox = document.querySelector('.search input');
